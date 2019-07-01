@@ -1,0 +1,17 @@
+C:\Users\nguyenhuuhoa\Desktop\ForClient\ForClient\bin\Debug\ForClient.exe.config
+C:\Users\nguyenhuuhoa\Desktop\ForClient\ForClient\bin\Debug\ForClient.exe
+C:\Users\nguyenhuuhoa\Desktop\ForClient\ForClient\bin\Debug\ForClient.pdb
+C:\Users\nguyenhuuhoa\Desktop\ForClient\ForClient\obj\Debug\ForClient.csprojAssemblyReference.cache
+C:\Users\nguyenhuuhoa\Desktop\ForClient\ForClient\obj\Debug\MainWindow.g.cs
+C:\Users\nguyenhuuhoa\Desktop\ForClient\ForClient\obj\Debug\App.g.cs
+C:\Users\nguyenhuuhoa\Desktop\ForClient\ForClient\obj\Debug\ForClient_MarkupCompile.cache
+C:\Users\nguyenhuuhoa\Desktop\ForClient\ForClient\obj\Debug\ForClient_MarkupCompile.lref
+C:\Users\nguyenhuuhoa\Desktop\ForClient\ForClient\obj\Debug\MainWindow.baml
+C:\Users\nguyenhuuhoa\Desktop\ForClient\ForClient\obj\Debug\ForClient.g.resources
+C:\Users\nguyenhuuhoa\Desktop\ForClient\ForClient\obj\Debug\ForClient.Properties.Resources.resources
+C:\Users\nguyenhuuhoa\Desktop\ForClient\ForClient\obj\Debug\ForClient.csproj.GenerateResource.cache
+C:\Users\nguyenhuuhoa\Desktop\ForClient\ForClient\obj\Debug\ForClient.csproj.CoreCompileInputs.cache
+C:\Users\nguyenhuuhoa\Desktop\ForClient\ForClient\obj\Debug\ForClient.exe
+C:\Users\nguyenhuuhoa\Desktop\ForClient\ForClient\obj\Debug\ForClient.pdb
+C:\Users\nguyenhuuhoa\Desktop\ForClient\ForClient\obj\Debug\Img.g.cs
+C:\Users\nguyenhuuhoa\Desktop\ForClient\ForClient\obj\Debug\Img.baml
