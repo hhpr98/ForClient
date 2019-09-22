@@ -24,12 +24,12 @@
         <Label Width="100" Height="30" Canvas.Left="20" Canvas.Top="320" Foreground="Red" FontSize="17">Spt</Label>
         <Label Width="100" Height="30" Canvas.Left="20" Canvas.Top="380" Foreground="Red" FontSize="17">Jungle</Label>
 
-        <ComboBox Name="cbAll" Canvas.Top="120" Canvas.Left="150" Height="30" Width="150" SelectedIndex="1"></ComboBox>
-        <ComboBox Name="cbAdc" Canvas.Top="170" Canvas.Left="150" Height="30" Width="150" SelectedIndex="1"></ComboBox>
-        <ComboBox Name="cbTop" Canvas.Top="220" Canvas.Left="150" Height="30" Width="150" SelectedIndex="1"></ComboBox>
-        <ComboBox Name="cbMid" Canvas.Top="270" Canvas.Left="150" Height="30" Width="150" SelectedIndex="1"></ComboBox>
-        <ComboBox Name="cbSpt" Canvas.Top="320" Canvas.Left="150" Height="30" Width="150" SelectedIndex="1"></ComboBox>
-        <ComboBox Name="cbJungle" Canvas.Top="380" Canvas.Left="150" Height="30" Width="150" SelectedIndex="1"></ComboBox>
+        <ComboBox Name="cbAll" Canvas.Top="120" Canvas.Left="150" Height="30" Width="150" SelectedIndex="0"></ComboBox>
+        <ComboBox Name="cbAdc" Canvas.Top="170" Canvas.Left="150" Height="30" Width="150" SelectedIndex="0"></ComboBox>
+        <ComboBox Name="cbTop" Canvas.Top="220" Canvas.Left="150" Height="30" Width="150" SelectedIndex="0"></ComboBox>
+        <ComboBox Name="cbMid" Canvas.Top="270" Canvas.Left="150" Height="30" Width="150" SelectedIndex="0"></ComboBox>
+        <ComboBox Name="cbSpt" Canvas.Top="320" Canvas.Left="150" Height="30" Width="150" SelectedIndex="0"></ComboBox>
+        <ComboBox Name="cbJungle" Canvas.Top="380" Canvas.Left="150" Height="30" Width="150" SelectedIndex="0"></ComboBox>
 
     </Canvas>
 </Window>

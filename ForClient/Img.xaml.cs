@@ -49,7 +49,7 @@ namespace ForClient
         private void BrowseButton_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog dlg = new OpenFileDialog();
-            dlg.InitialDirectory = @"C:\Users\nguyenhuuhoa\Desktop\ForClient\ForClient\Image";
+            dlg.InitialDirectory = @"C:\Git\ForClient\ForClient\Image";
             dlg.Filter = "Image files (*.jpg)|*.jpg|All Files (*.*)|*.*";
             dlg.RestoreDirectory = true;
 
