@@ -51,22 +51,24 @@ namespace ForClient
             var listAll = new List<String>();
             //var i = list[1].Name.IndexOf(' ');
             //MessageBox.Show(i.ToString());
+            int c = 1;
             foreach (var index in list)
             {
                 var str = index.Name;
                 var i = str.IndexOf(' ');
                 if (i==-1)
                 {
-                    listAll.Add(str);
+                    listAll.Add((c++).ToString() + "." + str);
                 }
                 else
                 {
-                    listAll.Add(str.Substring(0, i));
+                    listAll.Add((c++).ToString() + "." + str.Substring(0, i));
                 }
             }
             cbAll.ItemsSource = listAll;
-            
 
+
+            c = 1;
             var listTop = new List<string>();
             foreach (var index in list)
             {
@@ -76,16 +78,17 @@ namespace ForClient
                     var i = str.IndexOf(' ');
                     if (i == -1)
                     {
-                        listTop.Add(str);
+                        listTop.Add((c++).ToString() + "." + str);
                     }
                     else
                     {
-                        listTop.Add(str.Substring(0, i));
+                        listTop.Add((c++).ToString() + "." + str.Substring(0, i));
                     }
                 }
             }
             cbTop.ItemsSource = listTop;
 
+            c = 1;
             var listAdc = new List<string>();
             foreach (var index in list)
             {
@@ -95,16 +98,17 @@ namespace ForClient
                     var i = str.IndexOf(' ');
                     if (i == -1)
                     {
-                        listAdc.Add(str);
+                        listAdc.Add((c++).ToString() + "." + str);
                     }
                     else
                     {
-                        listAdc.Add(str.Substring(0, i));
+                        listAdc.Add((c++).ToString() + "." + str.Substring(0, i));
                     }
                 }
             }
             cbAdc.ItemsSource = listAdc;
 
+            c = 1;
             var listMid = new List<string>();
             foreach (var index in list)
             {
@@ -114,16 +118,17 @@ namespace ForClient
                     var i = str.IndexOf(' ');
                     if (i == -1)
                     {
-                        listMid.Add(str);
+                        listMid.Add((c++).ToString() + "." + str);
                     }
                     else
                     {
-                        listMid.Add(str.Substring(0, i));
+                        listMid.Add((c++).ToString() + "." + str.Substring(0, i));
                     }
                 }
             }
             cbMid.ItemsSource = listMid;
 
+            c = 1;
             var listSpt = new List<string>();
             foreach (var index in list)
             {
@@ -133,16 +138,17 @@ namespace ForClient
                     var i = str.IndexOf(' ');
                     if (i == -1)
                     {
-                        listSpt.Add(str);
+                        listSpt.Add((c++).ToString() + "." + str);
                     }
                     else
                     {
-                        listSpt.Add(str.Substring(0, i));
+                        listSpt.Add((c++).ToString() + "." + str.Substring(0, i));
                     }
                 }
             }
             cbSpt.ItemsSource = listSpt;
 
+            c = 1;
             var listJungle = new List<string>();
             foreach (var index in list)
             {
@@ -152,11 +158,11 @@ namespace ForClient
                     var i = str.IndexOf(' ');
                     if (i == -1)
                     {
-                        listJungle.Add(str);
+                        listJungle.Add((c++).ToString() + "." + str);
                     }
                     else
                     {
-                        listJungle.Add(str.Substring(0, i));
+                        listJungle.Add((c++).ToString() + "." + str.Substring(0, i));
                     }
                 }
             }
