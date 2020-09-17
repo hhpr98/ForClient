@@ -11,10 +11,10 @@
         <TextBox Name="txt" Height="28" Width="320" Canvas.Left="20" Canvas.Top="50" Background="LightBlue"
                  Text="C:\git\ForClient\ForClient\champ" FontSize="20" IsEnabled="False"></TextBox>
 
-        <Button Height="40" Width="100" Canvas.Left="390" Canvas.Top="120" FontSize="20" FontWeight="Bold" Click="Button_Click">_Radom</Button>
+        <Button Height="40" Width="100" Canvas.Left="390" Canvas.Top="120" FontSize="20" FontWeight="Bold" Click="Button_Random_Click">_Radom</Button>
         <Label Name="lbl" Height="40" FontSize="23" Width="320" HorizontalContentAlignment="Center" Canvas.Left="520" Canvas.Top="120" Foreground="Red" Background="AliceBlue"></Label>
 
-        <Button Height="28" Width="450" Canvas.Left="390" Canvas.Top="50" FontSize="15" FontWeight="Bold" Click="Button_Click_1" >View Image</Button>
+        <Button Height="28" Width="450" Canvas.Left="390" Canvas.Top="50" FontSize="15" FontWeight="Bold" Click="Button_View_Image" >View Image</Button>
 
 
         <Label Width="100" Height="35" Canvas.Left="20" Canvas.Top="120" Foreground="Red" FontSize="17">All</Label>
@@ -31,5 +31,6 @@
         <ComboBox Name="cbSpt" Canvas.Top="320" Canvas.Left="190" Height="30" Width="150" SelectedIndex="0"></ComboBox>
         <ComboBox Name="cbJungle" Canvas.Top="380" Canvas.Left="190" Height="30" Width="150" SelectedIndex="0"></ComboBox>
 
+        <WrapPanel x:Name="stackAlphabet" Width="450" Height="200" Background="Black" Canvas.Left="400" Canvas.Top="200"></WrapPanel>
     </Canvas>
 </Window>

@@ -26,27 +26,16 @@ namespace ForClient
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            var path = txt.Text;
-            var info = new DirectoryInfo(path);
-
-            DirectoryInfo[] list = info.GetDirectories();
-            //MessageBox.Show(list[70].Name);
-
-            var random = new Random();
-
-            var r = random.Next(list.Count());
-
-            lbl.Content = list[r].Name;
-        }
-
+        #region LoadEvent
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            // Lấy info path
             var path = txt.Text;
             var info = new DirectoryInfo(path);
 
             DirectoryInfo[] list = info.GetDirectories();
+
+            // Add data cho từng combobox (all,top,mid,jungle,spt,adc)
 
             var listAll = new List<String>();
             //var i = list[1].Name.IndexOf(' ');
@@ -167,12 +156,65 @@ namespace ForClient
                 }
             }
             cbJungle.ItemsSource = listJungle;
+
+            // Load alphabet
+            for (char ch='A';ch<='Z';ch++)
+            {
+                Button btn = new Button();
+                btn.Name = "btn" + ch.ToString();
+                btn.Content = ch.ToString();
+                btn.Margin = new Thickness(5, 10, 5, 10);
+                btn.Width = 30;
+                btn.Height = 30;
+                btn.Click += Btn_Click;
+                stackAlphabet.Children.Add(btn);
+            }    
+        }
+        #endregion
+
+        #region ButtonClick
+        private void Button_Random_Click(object sender, RoutedEventArgs e)
+        {
+            var path = txt.Text;
+            var info = new DirectoryInfo(path);
+
+            DirectoryInfo[] list = info.GetDirectories();
+            //MessageBox.Show(list[70].Name);
+
+            var random = new Random();
+
+            var r = random.Next(list.Count());
+
+            lbl.Content = list[r].Name;
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Button_View_Image(object sender, RoutedEventArgs e)
         {
             Img imgWindow = new Img();
             imgWindow.ShowDialog();
         }
+
+        private void Btn_Click(object sender, RoutedEventArgs e)
+        {
+            var btn = sender as Button;
+            //MessageBox.Show(btn.Name);
+            var ch = btn.Name[3];
+
+            var path = txt.Text;
+            var info = new DirectoryInfo(path);
+            DirectoryInfo[] list = info.GetDirectories();
+            var str = new StringBuilder();
+            foreach (var item in list)
+            {
+                var firstCharacter = item.Name.ToUpper()[0];
+                if (firstCharacter == ch)
+                {
+                    str.Append(item.Name + "\n");
+                }    
+            } 
+            MessageBox.Show(str.ToString(), "Alert", MessageBoxButton.OK, MessageBoxImage.Information);
+
+        }
+        #endregion
     }
 }
