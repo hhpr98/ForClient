@@ -5,24 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ForClient"
         mc:Ignorable="d"
-        Title="Img" Height="550" Width="800" WindowStartupLocation="CenterScreen">
-    <!--
-    <Canvas>
-        <Image Width="600" Height="450" Name="img" Loaded="Window_Loaded"></Image>
-    </Canvas>
-    -->
+        Title="Img" Height="700" Width="500" WindowStartupLocation="CenterScreen">
     <Canvas>
         <StackPanel Orientation="Horizontal" Background="LightBlue" Height="40">
-            <Label Margin="10,0,0,0" Height="23" Name="Label1">
-                Current File:
-            </Label>
-            <Label Margin="5,0,0,0" Height="25" Name="FileNameLabel" Width="550" />
+            <Label Margin="10,0,0,0" Height="23" Width="90" Name="Label1">Current File:</Label>
+            <Label Margin="5,0,0,0" Height="25" Name="FileNameLabel" Width="300" />
             <Button Margin="5,0,0,0" Height="23" Name="BrowseButton" Width="75" Click="BrowseButton_Click">
                 Browse
             </Button>
         </StackPanel>
-        <StackPanel >
-            <Image Name="ImageViewer1" Height="450" Width="700" />
+        <StackPanel Margin="50,50,0,0">
+            <Image Name="ImageViewer" Height="600" Width="400" Stretch="Fill"/>
         </StackPanel>
     </Canvas>
 </Window>

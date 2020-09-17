@@ -1,0 +1,35 @@
+﻿<Window x:Class="ForClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ForClient"
+        mc:Ignorable="d"
+        Title="Tool for LOL" Height="500" Width="900" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Canvas>
+        <Label Canvas.Left="32" Canvas.Top="12">Format folder example: champ adc spt jungle top mid</Label>
+        <TextBox Name="txt" Height="28" Width="320" Canvas.Left="20" Canvas.Top="50" Background="LightBlue"
+                 Text="C:\git\ForClient\ForClient\champ" FontSize="20" IsEnabled="False"></TextBox>
+
+        <Button Height="40" Width="100" Canvas.Left="390" Canvas.Top="120" FontSize="20" FontWeight="Bold" Click="Button_Click">_Radom</Button>
+        <Label Name="lbl" Height="40" FontSize="23" Width="320" HorizontalContentAlignment="Center" Canvas.Left="520" Canvas.Top="120" Foreground="Red" Background="AliceBlue"></Label>
+
+        <Button Height="28" Width="450" Canvas.Left="390" Canvas.Top="50" FontSize="15" FontWeight="Bold" Click="Button_Click_1" >View Image</Button>
+
+
+        <Label Width="100" Height="35" Canvas.Left="20" Canvas.Top="120" Foreground="Red" FontSize="17">All</Label>
+        <Label Width="100" Height="35" Canvas.Left="20" Canvas.Top="170" Foreground="Red" FontSize="17">Adc</Label>
+        <Label Width="100" Height="35" Canvas.Left="20" Canvas.Top="220" Foreground="Red" FontSize="17">Top</Label>
+        <Label Width="100" Height="35" Canvas.Left="20" Canvas.Top="270" Foreground="Red" FontSize="17">Mid</Label>
+        <Label Width="100" Height="35" Canvas.Left="20" Canvas.Top="320" Foreground="Red" FontSize="17">Spt</Label>
+        <Label Width="100" Height="35" Canvas.Left="20" Canvas.Top="380" Foreground="Red" FontSize="17">Jungle</Label>
+
+        <ComboBox Name="cbAll" Canvas.Top="120" Canvas.Left="190" Height="30" Width="150" SelectedIndex="0"></ComboBox>
+        <ComboBox Name="cbAdc" Canvas.Top="170" Canvas.Left="190" Height="30" Width="150" SelectedIndex="0"></ComboBox>
+        <ComboBox Name="cbTop" Canvas.Top="220" Canvas.Left="190" Height="30" Width="150" SelectedIndex="0"></ComboBox>
+        <ComboBox Name="cbMid" Canvas.Top="270" Canvas.Left="190" Height="30" Width="150" SelectedIndex="0"></ComboBox>
+        <ComboBox Name="cbSpt" Canvas.Top="320" Canvas.Left="190" Height="30" Width="150" SelectedIndex="0"></ComboBox>
+        <ComboBox Name="cbJungle" Canvas.Top="380" Canvas.Left="190" Height="30" Width="150" SelectedIndex="0"></ComboBox>
+
+    </Canvas>
+</Window>
