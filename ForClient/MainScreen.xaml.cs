@@ -166,6 +166,7 @@ namespace ForClient
                 btn.Margin = new Thickness(5, 10, 5, 10);
                 btn.Width = 30;
                 btn.Height = 30;
+                btn.IsEnabled = checkButton(ch);
                 btn.Click += Btn_Click;
                 stackAlphabet.Children.Add(btn);
             }    
@@ -214,6 +215,22 @@ namespace ForClient
             } 
             MessageBox.Show(str.ToString(), "Alert", MessageBoxButton.OK, MessageBoxImage.Information);
 
+        }
+        #endregion
+
+        #region function
+        private bool checkButton(char ch)
+        {
+            var path = txt.Text;
+            var info = new DirectoryInfo(path);
+            DirectoryInfo[] list = info.GetDirectories();
+            int count = 0;
+            foreach (var item in list)
+            {
+                var firstCharacter = item.Name.ToUpper()[0];
+                if (firstCharacter == ch) count++;
+            }
+            return count == 0 ? false : true;
         }
         #endregion
     }
